@@ -11,7 +11,7 @@ harmonize <- function(x){
     stop("harmonize() only supports RasterLayers at this time.\n")
   }
   
-  # determine union extent
+  # determine intersect extent
   e <- intersectExtent(x)
   
   # crop all inputs to this common extent
