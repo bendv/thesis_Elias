@@ -21,7 +21,7 @@ intersectExtent <- function(x){
     e <- lapply(x, extent)
   }
   
-  # define union Extent
+  # define intersecting Extent
   isectxmin <- max(unlist(lapply(e, xmin)))
   isectxmax <- min(unlist(lapply(e, xmax)))
   isectymin <- max(unlist(lapply(e, ymin)))
