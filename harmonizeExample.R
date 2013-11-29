@@ -40,7 +40,7 @@ plot(cropImages[[1]])
 # now you can put all of these raster layers into a brick
 b <- brick(cropImages[[1]], cropImages[[2]], cropImages[[3]], ....etc....)
 
-# that was not very effecient. Here's a shortcut
+# that was not very efficient. Here's a shortcut
 b <- do.call("brick", cropImages)
 
 # check it out
