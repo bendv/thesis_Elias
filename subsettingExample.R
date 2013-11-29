@@ -3,6 +3,7 @@
 #-----------------------------------------------------
 
 library(raster)
+library(rgdal)
 
 # load in a SpatialPolygonsDataFrame (shapefile)
 allFeatures <- readOGR(dsn="path/to/polygon/data/nameOfFile.shp", layer="nameOfLayer")
