@@ -14,6 +14,9 @@ fl <- list.files(pattern=glob2rx("*.tif"))
 # ...or if there are subfolders, use recursive=TRUE
 fl <- list.files(pattern=glob2rx("*.tif"), recursive=TRUE)
 
+# ...if the extention is with a capital "T" instead of lower case "t" use ignore.case=TRUE
+fl <- list.files(pattern=glob2rx("*.tif"), recursive=TRUE, ignore.case=TRUE)
+
 # make a list object containing raster objects of all these files
 images <- lapply(fl, raster)
 # check it out
